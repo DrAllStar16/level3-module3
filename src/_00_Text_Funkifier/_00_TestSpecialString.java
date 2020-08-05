@@ -1,3 +1,4 @@
+
 package _00_Text_Funkifier;
 
 import static org.junit.Assert.*;
@@ -41,3 +42,4 @@ public class _00_TestSpecialString {
 	
 	}
 }
+
