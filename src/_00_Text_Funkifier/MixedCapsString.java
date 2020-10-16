@@ -11,16 +11,18 @@ public class MixedCapsString extends SpecialString{
 		String d = new String();
 		Character t;
 		Character z;
-		for (int i = 0; i < 1; i++) {
-			z = s.charAt(i);
-			z.toUpperCase(i);
-			d = d +z;
-		}
-		
-		for (int i = 1; i < s.length(); i++) {
-			z = s.charAt(i);
-			z.toLowerCase(i);
-			d = d +z;
+		for (int i = 0; i < s.length(); i++) {
+			if (i % 2 == 0) {
+				t = s.charAt(i);
+				z = t.toLowerCase(t);
+				d = d + z;
+			}
+			
+			else if (i % 2 != 0) {
+				t = s.charAt(i);
+				z = t.toUpperCase(t);
+				d = d + z;
+			}
 		}
 		
 		return d;
