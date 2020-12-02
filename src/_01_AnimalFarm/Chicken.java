@@ -3,9 +3,9 @@ package _01_AnimalFarm;
 public class Chicken extends Animal{
 
 	@Override
-	public int makeNoise(int n1, int n2) {
+	public String makeNoise(String moo, String bak, String oink, String bah) {
 		// TODO Auto-generated method stub
-		return 0;
+		return "chicken";
 	}
 
 }

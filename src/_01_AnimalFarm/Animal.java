@@ -2,7 +2,7 @@ package _01_AnimalFarm;
 
 public abstract class Animal {
 
-	public abstract int makeNoise(int n1, int n2);
+	public abstract String makeNoise(String moo, String bak, String oink, String bah);
 
 	public int common() {
 		return 0;
