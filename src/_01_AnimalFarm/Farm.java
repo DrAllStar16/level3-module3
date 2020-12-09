@@ -17,10 +17,15 @@ public class Farm extends Animal{
 		Farm.add(sheep);
 		
 		
-			cow.makeNoise(1, 2);
-			pig.makeNoise(1, 2);
-			chicken.makeNoise(1, 2);
-			sheep.makeNoise(1, 2);
+			cow.makeNoise("moo", "moo", "moo", "moo");
+			pig.makeNoise("oink", "oink", "oink", "oink");
+			chicken.makeNoise("bak", "bak", "bak", "bak");
+			sheep.makeNoise("bah", "bah", "bah", "bah");
+			
+			cow.common();
+			pig.common();
+			chicken.common();
+			sheep.common();
 			
 		
 	
