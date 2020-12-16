@@ -2,12 +2,10 @@ package _01_AnimalFarm;
 
 public abstract class Animal {
 
-	public abstract String makeNoise(String moo, String bak, String oink, String bah);
+	public abstract void makeNoise(String noise);
 
-	public String common() {
-		System.out.println(makeNoise(moo, bak, oink, bah));
-		return "s";
-		
+	public void eat() {
+		System.out.println("eating food");
 	}
 	
 	

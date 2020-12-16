@@ -2,7 +2,7 @@ package _01_AnimalFarm;
 
 import java.util.ArrayList;
 
-public class Farm extends Animal{
+public class Farm{
 
 	public static void main(String[] args) {
 		Cow cow = new Cow();
@@ -16,25 +16,28 @@ public class Farm extends Animal{
 		Farm.add(chicken);
 		Farm.add(sheep);
 		
-		
-			cow.makeNoise("moo", "moo", "moo", "moo");
-			pig.makeNoise("oink", "oink", "oink", "oink");
-			chicken.makeNoise("bak", "bak", "bak", "bak");
-			sheep.makeNoise("bah", "bah", "bah", "bah");
+		 String noise = " ";
+		 
+	for (int i = 0; i < Farm.size(); i++) {
+		if (Farm.get(i).equals(cow)) {
+			noise = "moo";
+		}
+		if (Farm.get(i).equals(pig)) {
+			noise = "oink";
+		}
+		if (Farm.get(i).equals(chicken)) {
+			noise = "bak";
+		}
+		if (Farm.get(i).equals(sheep)) {
+			noise = "bah";
+		}
+		Farm.get(i).makeNoise(noise);
+		Farm.get(i).eat();
 			
-			cow.common();
-			pig.common();
-			chicken.common();
-			sheep.common();
-			
 		
+		}
+			
+	}
 	
-	}
-
-	@Override
-	public String makeNoise(String moo, String bak, String oink, String bah) {
-		// TODO Auto-generated method stub
-		return "noise";
-	}
 	
 }
